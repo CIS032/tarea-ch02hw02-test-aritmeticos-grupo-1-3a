@@ -10,4 +10,4 @@ Después de realizar todas las preguntas al usuario se imprime cada pregunta otr
 dada por el usuario. Si el usuario obtuvo una respuesta correcta, el programa deberá notificarlo; 
 si no, el programa deberá mostrar la respuesta correcta.
 Al final deberá indicársele al usuario la puntuación de su Test, en donde cada respuesta correcta se califica sobre 10 puntos. 
-El programa usa tres subrutinas, una para crear el Test, una para administrar el Test y una para calificar el Test.
+El programa usa tres subrutinas, una para crear, una para administrar y una para calificar el Test.
