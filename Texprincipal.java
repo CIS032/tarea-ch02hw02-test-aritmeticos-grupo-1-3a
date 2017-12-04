@@ -22,7 +22,7 @@ public int posR = 0;
         while (true) {            
             String menu= " 1-- Examen\n"
                         + "2-- Administarcion\n"
-                        + "3--Calificacion\n"
+                        + "3-- Calificacion\n"
                         + "4-- Salir";
                     int opcion=Integer.parseInt(JOptionPane.showInputDialog( menu));
             switch (opcion) {
@@ -56,12 +56,12 @@ public int posR = 0;
                                                                              JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,  
                                                                              null, opcionesArreglo1, opcionesArreglo1[0]);
                                 if (opcionesArreglo1[pregunS].equals(String.valueOf(resultado))) {
-                                    JOptionPane.showMessageDialog(null, "Respuesta Correcta");
+                                    JOptionPane.showMessageDialog(null, "Correcto");
                                     contestada = true;
                                     calificacion++;
                                 } else {
                                     contestada = false;
-                                    JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta + " =" + resultado);
+                                    JOptionPane.showMessageDialog(null, "Incorrecto: " + pregunta + " =" + resultado);
                                     malas++;
                                 }
                                 break;
@@ -74,12 +74,12 @@ public int posR = 0;
                                                                            "Examen Aritmetico UNL", JOptionPane.DEFAULT_OPTION, 
                                                                             JOptionPane.QUESTION_MESSAGE, null, opcionesArreglo2, opcionesArreglo2[0]);
                                 if (opcionesArreglo2[pregunR].equals(String.valueOf(resultado))) {
-                                    JOptionPane.showMessageDialog(null, "Respuesta Correcta");
+                                    JOptionPane.showMessageDialog(null, "Correcto");
                                     contestada = true;
                                     calificacion++;
                                 } else {
                                     contestada = false;
-                                    JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta 
+                                    JOptionPane.showMessageDialog(null, "Incorrecto: " + pregunta 
                                                                    + " =" + resultado);
                                     malas++;
                                 }
@@ -91,12 +91,12 @@ public int posR = 0;
                                 String opcionesArreglo3[] = obtenerOpciones(resultado);
                                 int pregunM = JOptionPane.showOptionDialog(null, "Seleccione la respuesta correcta:\n " + pregunta, "Examen Aritmetico UNL", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcionesArreglo3, opcionesArreglo3[0]);
                                 if (opcionesArreglo3[pregunM].equals(String.valueOf(resultado))) {
-                                    JOptionPane.showMessageDialog(null, "Respuesta Correcta");
+                                    JOptionPane.showMessageDialog(null, "Correcto");
                                     contestada = true;
                                     calificacion++;
                                 } else {
                                     contestada = false;
-                                    JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta 
+                                    JOptionPane.showMessageDialog(null, "Inorrecto: " + pregunta 
                                             + " =" + resultado);
                                     malas++;
                                 }
